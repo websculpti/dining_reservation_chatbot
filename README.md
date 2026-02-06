@@ -69,5 +69,4 @@ dining-reservation-bot/
 │ └── metrics.py # Booking statistics
 │
 
-## Project Structure
 
