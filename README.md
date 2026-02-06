@@ -48,6 +48,26 @@ No paid AI or external database
 SMS delivery is mocked
 Designed as a functional prototype, not a production system
 
+## Project Structure
+
+dining-reservation-bot/
+│
+├── app.py # Main Streamlit application
+├── data/
+│ ├── menu_scaledown.json # Restaurant menu
+│ ├── policies_scaledown.json # Opening hours and rules
+│ ├── tables.json # Table size inventory
+│ ├── availability.json # Date-wise time slot availability
+│ ├── reservations.json # Stored reservations
+│ └── waitlist.json # Waitlisted requests
+│
+├── services/
+│ ├── chatbot.py # Rule-based logic + ScaleDown compression
+│ ├── table_optimizer.py # Table selection logic
+│ ├── waitlist_manager.py # Waitlist handling
+│ ├── sms_mock.py # SMS notification mock
+│ └── metrics.py # Booking statistics
+│
 
 ## Project Structure
 
